@@ -12,12 +12,66 @@
     <p class="tagline">Generative art, seeded by a name.</p>
   </header>
 
-  <main class="stage">
-    <canvas id="art" aria-label="Generated artwork"></canvas>
-  </main>
+  <div class="workspace">
+    <aside class="controls" aria-label="Controls">
+      <label class="field">
+        <span class="label">Your full name</span>
+        <input id="name" type="text" autocomplete="off" spellcheck="false" maxlength="80" placeholder="Type a name" />
+      </label>
+      <div class="seedrow">
+        <span class="label">Seed</span>
+        <code id="seed">-</code>
+      </div>
+      <p id="norm" class="hint"></p>
+      <button id="random-name" type="button">Random name</button>
+
+      <hr />
+
+      <label class="field">
+        <span class="label">Shape</span>
+        <select id="shape">
+          <option value="mixed">Mixed</option>
+          <option value="circle">Circles</option>
+          <option value="rect">Squares</option>
+          <option value="polygon">Polygons</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span class="label">Min size <output id="sizeMin-out"></output></span>
+        <input id="sizeMin" type="range" min="4" max="100" step="1" />
+      </label>
+
+      <label class="field">
+        <span class="label">Max size <output id="sizeMax-out"></output></span>
+        <input id="sizeMax" type="range" min="10" max="140" step="1" />
+      </label>
+
+      <label class="field">
+        <span class="label">Density <output id="density-out"></output></span>
+        <input id="density" type="range" min="0" max="1" step="0.05" />
+      </label>
+
+      <label class="field">
+        <span class="label">Palette</span>
+        <select id="paletteMode">
+          <option value="auto">Auto (from seed)</option>
+          <option value="complementary">Complementary</option>
+          <option value="analogous">Analogous</option>
+          <option value="triadic">Triadic</option>
+        </select>
+      </label>
+
+      <div id="swatches" class="swatches" aria-label="Current palette"></div>
+    </aside>
+
+    <main class="stage">
+      <canvas id="art" aria-label="Generated artwork"></canvas>
+    </main>
+  </div>
 
   <footer class="statusbar">
-    <span id="status">canvas: --</span>
+    <span id="status">--</span>
   </footer>
 
   <script type="module" src="src/main.js"></script>

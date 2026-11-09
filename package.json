@@ -1,6 +1,6 @@
 {
   "name": "chromatica",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generative art studio seeded by a name. Same name, same artwork.",
   "type": "module",
   "private": true,

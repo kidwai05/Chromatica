@@ -22,13 +22,13 @@
 - [x] M1.3 Grid, radial and scatter layouts
 - [x] M1.4 Scene-graph structure with the renderer separated from the generator
 
-## Week 2: Seed, colour and customization
+## Week 2: Seed, colour and customization (done)
 
-- [ ] M2.1 Name -> normalize -> hash -> PRNG, with a test that the same name gives the same first 100 numbers
-- [ ] M2.2 Stream forking
-- [ ] M2.3 Palette generators (complementary, analogous, triadic)
-- [ ] M2.4 Name-signature layer
-- [ ] M2.5 Controls for shape type, size range, density, palette mode
+- [x] M2.1 Name -> normalize -> hash -> PRNG, with a test that the same name gives the same first 100 numbers
+- [x] M2.2 Stream forking
+- [x] M2.3 Palette generators (complementary, analogous, triadic)
+- [x] M2.4 Name-signature layer
+- [x] M2.5 Controls for shape type, size range, density, palette mode
 
 ## Week 3: Fractals, export and polish
 
