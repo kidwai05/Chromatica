@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Chromatica
 
 A generative art and colour studio where **your name is the seed**.
@@ -72,3 +73,6 @@ chromatica/
 | 1 | Canvas rendering, geometry, layouts, scene graph | Done |
 | 2 | Name -> seed -> PRNG, palettes, name signature, controls | Next |
 | 3 | Fractal pattern, SVG/PNG export, favourites, polish | Planned |
+=======
+# Chromatica
+>>>>>>> abacf30d3877c4b58ec1d3aae436772687a6ead4
