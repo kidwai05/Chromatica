@@ -147,11 +147,11 @@ test("generateScene: different names look different", () => {
   assert.notEqual(a.meta.seed, b.meta.seed);
 });
 
-test("scene is plain JSON with finite numbers, in bounds, 6 layers", () => {
+test("scene is plain JSON with finite numbers, in bounds, 7 layers", () => {
   for (const name of ["Ada Lovelace", "", "🎨 Ünïcode", "x".repeat(500), "李小龍"]) {
     const scene = generateScene(name);
     assert.deepEqual(JSON.parse(JSON.stringify(scene)), scene);
-    assert.deepEqual(scene.layers.map((l) => l.name), ["texture", "scatter", "web", "rings", "signature", "focus"]);
+    assert.deepEqual(scene.layers.map((l) => l.name), ["texture", "scatter", "fractal", "web", "rings", "signature", "focus"]);
     for (const l of scene.layers) for (const s of l.shapes) {
       for (const [k, v] of Object.entries(s)) if (typeof v === "number") assert.ok(Number.isFinite(v), `${name} ${s.type}.${k}`);
       const x = s.x ?? s.x1, y = s.y ?? s.y1;

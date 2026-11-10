@@ -30,13 +30,14 @@
 - [x] M2.4 Name-signature layer
 - [x] M2.5 Controls for shape type, size range, density, palette mode
 
-## Week 3: Fractals, export and polish
+## Week 3: Fractals, export and polish (done)
 
-- [ ] M3.1 One fractal pattern with a seed-driven depth
-- [ ] M3.2 SVG exporter from the scene graph, plus PNG export
-- [ ] M3.3 Save and load favourites, numeric-seed input
-- [ ] M3.4 Algorithm version tag (`v1`) stored with every save
-- [ ] M3.5 UI polish, README GIFs, GitHub Pages demo
+- [x] M3.1 One fractal pattern with a seed-driven depth
+- [x] M3.2 SVG exporter from the scene graph, plus PNG export
+- [x] M3.3 Save and load favourites, numeric-seed input
+- [x] M3.4 Algorithm version tag (`v1`) stored with every save
+- [x] M3.5 UI polish, README gallery, GitHub Pages workflow
+- [ ] Publish: push to GitHub, enable Pages (Settings > Pages > Source: GitHub Actions), add the live link to the README
 
 ## Determinism pitfalls
 

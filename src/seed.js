@@ -36,3 +36,17 @@ export function hashString(str) {
 export function seedFromName(name) {
   return hashString(normalizeName(name));
 }
+
+export const MAX_SEED = 4294967295; // 2^32 - 1
+
+// Strict parse of a typed seed number: digits only, 0..2^32-1. Returns null
+// for anything else (so "12abc", "-5", "1e9" and 99999999999 are rejected).
+export function parseSeed(input) {
+  if (typeof input === "number") {
+    return Number.isInteger(input) && input >= 0 && input <= MAX_SEED ? input : null;
+  }
+  const s = String(input ?? "").trim();
+  if (!/^\d{1,10}$/.test(s)) return null;
+  const n = Number(s);
+  return n <= MAX_SEED ? n : null;
+}

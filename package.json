@@ -1,15 +1,22 @@
 {
   "name": "chromatica",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Generative art studio seeded by a name. Same name, same artwork.",
   "type": "module",
   "private": true,
   "scripts": {
     "start": "python3 -m http.server 8000",
-    "test": "node --test"
+    "test": "node --test",
+    "gallery": "node scripts/build-gallery.mjs"
   },
   "engines": {
     "node": ">=20"
   },
-  "keywords": ["generative-art", "canvas", "svg", "seeded-random", "creative-coding"]
+  "keywords": [
+    "generative-art",
+    "canvas",
+    "svg",
+    "seeded-random",
+    "creative-coding"
+  ]
 }
